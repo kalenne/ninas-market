@@ -8,6 +8,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DoguinhosComponent } from './pages/doguinhos/doguinhos.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { ClienteComponent } from './pages/cliente/cliente.component';
+import { CadastrarClienteComponent } from './pages/cliente/cadastrar-cliente/cadastrar-cliente.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,15 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     HeaderComponent,
     FooterComponent,
     DoguinhosComponent,
-    CarouselComponent
+    CarouselComponent,
+    ClienteComponent,
+    CadastrarClienteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
